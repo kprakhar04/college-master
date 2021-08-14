@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.similar::-webkit-scrollbar {
+  display: inline !important;
+  width: 20px;
+}
+
+.similar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.similar::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+:root {
+  --bgprimary: white;
+  --bgsecondary: rgba(255, 255, 255, 0.568);
+  --text-primary: black;
+  --text-secondary: #303030;
+}
+
+.page {
+  min-height: 100vh !important;
+  width: 100%;
+  background-image: url('/src/assets/28466.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (max-width: 512px) {
+  .page {
+    background-image: url('/src/assets/28466-mobile.jpg');
+  }
+}
+
+
+.bgprimary{
+  background-color: var(--bgprimary);
+}
+.bgsecondary{
+  background-color: var(--bgsecondary);
+}
+.text-primary{
+  color: var(--text-primary);
+}
+.text-secondary{
+  color: var(--text-secondary) !important; 
+}
+
+
+html,
+body {
+  font-family: 'Roboto', sans-serif !important;
+  line-height: 1.8;
+  background-color: var(--bgprimary);
+  
+  /* overflow: hidden; */
+}
+
+
+.card{
+  padding: 10px !important;
+  border-radius: 1.5em !important;
+}
+
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px !important;
+  }
+}
+.container {
+  max-width: 1280px;
+  width: 90% !important;
+}
+
+ 
+ .switch.dark label input[type=checkbox]:checked+.lever {
+    background-color: rgba(255, 255, 255, 0.863) !important;
+ }
+ .switch.dark label input[type=checkbox]:checked+.lever:after {
+    background-color: rgba(255, 255, 255, 0.863) !important;
+ }
+
+ .MuiInput-underline:before ,:after{
+     border-bottom: 0px solid rgba(0, 0, 0, 0.42) !important;
+ }
+
+.hoverBtn :hover{
+  background-color: var(--bgsecondary) !important;
+  color: red;
+}
+
+.dashCard{
+  background-color: #e2f3f2;
+  opacity: 0.8;
+}
+.tableBg{
+  opacity: 0.95;
+}
+.similar{
+  height: 180px !important;
+  overflow: scroll !important;
+  background-color: var(--bgprimary);
+}
+.collegeInfo{
+  margin-top: 7px;
+  padding: 25px 15px 0 35px;
+  opacity: 0.8;
+  background-color: #f8f7f7;
+  height: 180px !important;
+}
+.collegeInfo h1{
+  font-size: 3em !important;
+  font-weight: bold;
+}
+
+@media (max-width: 512px) {
+  .collegeInfo{
+    height: 320px !important;
+  }
+  .collegeInfo h1{
+    font-size: 2  em !important;
+    text-align: center;
+  }
+}
+
+.studentInfo{
+  margin-top: 7px;
+  padding: 25px 15px 20px 35px;
+  opacity: 0.8;
+  background-color: #f1e5e5e8 !important;
+  border-radius: 1.3em;
+  
+}
+.studentInfo > .zoom{
+  transition: all 2s ease-in-out;
+}
+.studentInfo > .zoom :hover{
+  transform: scale(1.04);
+}
+
+
+.shadow {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
